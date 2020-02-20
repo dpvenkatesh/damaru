@@ -109,7 +109,7 @@ img {
       h1, h2, h3 {
         text-align: center;
         margin: 0;
-        background: white;
+       
         font: 'Work Sans', sans-serif;
       }
       
@@ -122,6 +122,27 @@ img {
       
       .damaru-logo {
         max-width: 200px;
+      }
+      
+      .footer {
+        position: fixed;
+        bottom: 0;
+       
+        font-size: 3vw;
+        width: 100%;
+      }
+      .small {
+        font-size: 25px;
+      }
+      
+      .gradient-text {
+        text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#330867));
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: 20vw; */
+    font-family: "Poppins", sans-serif;
       }
     </style>
 <body>
@@ -144,16 +165,18 @@ img {
           <figure><p>Bharathanatyam</p>
             <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/VEtqTMMzUsvFqZPLab153a3dx.png" alt="">
           </figure>
+          <div class="">
+        <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/logo/de0c196d-d32b-43ff-badb-89d1d0f17920.png" alt="">
+      </div>
          
         </div>
-        
       </section>
-      <div class="center-slide">
-        <img class='damaru-logo' src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/logo/de0c196d-d32b-43ff-badb-89d1d0f17920.png" alt="">
-        <h1>Happy Maha Shivaratri</h1>
-        <h2>Damaru</h2>
+      <div class="footer">
+        <h1 class="gradient-text">Happy Maha Shivarathri</h1>
+        <h2><span class="small">from</span> Damaru</h2>
         <h3>School of music dance and arts</h3>
       </div>
+
 </body>
 </html>
 
