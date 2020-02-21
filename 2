@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>Damaru the School of music dance and arts</title>
+    </head>
+    <style>
+        body {
+  background-image:url();
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 242px;
+  height: 110px;
+	position: absolute;
+  top: 25%;
+  left: 42%;
+  perspective: 800px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#carousel figure { 
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  border-top: 3px solid;
+  background-color: #fff;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel figure:nth-child(1) { transform: rotateY(  0deg ); border-color:  #38a68d;}
+#carousel figure:nth-child(2) { transform: rotateY(  90deg );border-color: #38a68d; }
+#carousel figure:nth-child(3) { transform: rotateY(  180deg );border-color:  #38a68d;}
+#carousel figure:nth-child(4) { transform: rotateY( 270deg );border-color:  #38a68d; }
+
+#carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 288px ); animation: rotate1 10s infinite; }
+#carousel figure:nth-child(2) { transform: rotateY(  90deg ) translateZ( 288px ); animation: rotate2 10s infinite;}
+#carousel figure:nth-child(3) { transform: rotateY(  180deg ) translateZ( 288px ); animation: rotate3 10s infinite; }
+#carousel figure:nth-child(4) { transform: rotateY( 270deg ) translateZ( 288px ); animation: rotate4 10s infinite; }
+
+#carousel figure p {
+  position: absolute;
+  text-align: right;
+  font-size: 25px;
+  bottom: 0;
+  right: 0;
+  padding: 5;
+  margin: 0;
+  background: rgb(0,0,0, 0.7);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+ @keyframes rotate1 {
+  0%   {transform: rotateY(   0deg ) translateZ( 288px);}
+25%  {transform: rotateY(  -90deg ) translateZ( 288px );}
+  50%  {transform: rotateY(  -180deg ) translateZ(288px );}
+  75% {transform: rotateY(  -270deg ) translateZ( 288px );}
+  100% {transform: rotateY(  -360deg ) translateZ( 288px );}
+ }
+ 
+ @keyframes rotate2 {
+  0%   {transform: rotateY(   90deg ) translateZ( 288px);}
+  25%  {transform: rotateY(   0deg ) translateZ( 288px );}
+  50%  {transform: rotateY(  -90deg ) translateZ(288px );}
+  75% {transform: rotateY(  -180deg ) translateZ( 288px );}
+  100% {transform: rotateY(  -270deg ) translateZ( 288px );}
+ }
+ 
+ @keyframes rotate3 {
+  0%   {transform: rotateY(   180deg ) translateZ( 288px);}
+  25%  {transform: rotateY(  90deg ) translateZ( 288px );}
+  50%  {transform: rotateY(  0deg ) translateZ(288px );}
+  75% {transform: rotateY(  -90deg ) translateZ( 288px );}
+  100% {transform: rotateY(  -180deg ) translateZ( 288px );}
+ }
+ 
+ @keyframes rotate4 {
+  0%   {transform: rotateY(   270deg ) translateZ( 288px);}
+  25%  {transform: rotateY(  180deg ) translateZ( 288px );}
+  50%  {transform: rotateY(  90deg ) translateZ(288px );}
+  75% {transform: rotateY(  0deg ) translateZ( 288px );}
+  100% {transform: rotateY(  -90deg ) translateZ( 288px );}
+ }
+      
+      h1, h2, h3, h4 {
+        text-align: center;
+        margin: 0;
+       
+        font: 'Work Sans', sans-serif;
+      }
+      
+      .center-slide {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 400px
+      }
+      
+      .damaru-logo {
+        max-width: 200px;
+      }
+      
+      .footer {
+        position: fixed;
+        bottom: 0;
+       
+        font-size: 3vw;
+        width: 100%;
+      }
+      .small {
+        font-size: 25px;
+      }
+      
+      .gradient-text {
+        text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, right top, from(#30CFD0), to(#330867));
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: 20vw; */
+    font-family: "Poppins", sans-serif;
+      }
+    </style>
+<body>
+    
+    <section class="container">
+        <div id="carousel">
+          <figure>
+            
+            <p>Violin</p>
+            <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/kisspng-white-cane-vision-impairment-walking-s.png" alt="">
+            </figure>
+          <figure>
+            <p>Bharathanatyam</p>
+            <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/VEtqTMMzUsvFqZPLab153a3dx.png" alt="">
+          </figure>
+          <figure>
+            <p>Flute</p>
+            <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/dba97e17335a649ec93075aa29568594.png" alt="">
+          </figure>
+          <figure><p>Carnatic vocal music</p>
+            <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/kissclipart-vocal-music-clipart-singing-vocal-.png" alt="">
+          </figure>
+          <div class="">
+        <img src="https://img1.wsimg.com/isteam/ip/939ec798-34d8-4f71-95f7-b9604c5ab6a2/logo/de0c196d-d32b-43ff-badb-89d1d0f17920.png" alt="">
+      </div>
+         
+        </div>
+      </section>
+      <div class="footer">
+        <h1 class="gradient-text">Happy Maha Shivarathri</h1>
+        <h2 style="color: #ff0084;">Damaru</h2>
+        <h4 style="color: gray">School of Music Dance and Art</h3>
+        <br>
+      </div>
+
+</body>
+</html>
